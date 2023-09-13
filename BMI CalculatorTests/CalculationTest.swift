@@ -11,7 +11,7 @@ import XCTest
 
 class CalculatorBrainTests: XCTestCase {
 
-    // Test case for calculating BMI with a value less than 18.5
+    // Test case for calculating BMI with a value less than 18.0
     func testCalculateBMIUnderweight() {
         var calculatorBrain = CalculatorBrain()
         calculatorBrain.calculateBMI(height: 1.75, weight: 55.0)
@@ -21,7 +21,7 @@ class CalculatorBrainTests: XCTestCase {
         XCTAssertEqual(calculatorBrain.getColor(), #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1))
     }
 
-    // Test case for calculating BMI with a value between 18.5 and 24.9
+    // Test case for calculating BMI with a value between 18.5 and 22.9
     func testCalculateBMINormalWeight() {
         var calculatorBrain = CalculatorBrain()
         calculatorBrain.calculateBMI(height: 1.75, weight: 70.0)
